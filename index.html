@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Teetube</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header>
+        <img src="Teetube.png" alt="Logo TEETUBE">
+    </header>
+
+
+
+    <div class="content">
+        <div class="textBox">
+            <h2 id="titrevideo">HOW TO PLAY SINGED</h2>
+            <p>Notez ce film d'après les critères entre 0-5</p><br>
+            <label for="original">Originalité du film</label>
+            <input type="number" id="originaliter" name="original" min="0" max="5"><br>
+            <label for="qualite">Qualite du scenario</label>
+            <input type="number" id="qualiter" name="qualite" min="0" max="5">
+            <br>
+            <label for="acteur">Jeu des acteurs</label>
+            <input type="number" id="acteurr"name="acteur" min="0" max="5">
+            <br>
+            <label for="scene">Qualité de la mise en scène</label>
+            <input type="number" id="scener" name="scene" min="0" max="5">
+            <br>
+            <label for="son">Qualité de la bande son</label>
+            <input type="number" id="sonr" name="son" min="0" max="5"><br><br>
+            <input type="submit"  value="Envoyer l'avis">
+
+        </div>
+        <div id="changevideo">
+            <a href="https://www.youtube.com/watch?v=1YgxTY4NxAw">
+                <div class="imgBox"><iframe id="videoi" width="560" height="315" src="https://www.youtube.com/embed/1YgxTY4NxAw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+            </a>
+        </div>
+
+    </div>
+
+
+    <section id="parcourirvideo" class="recommandation">
+        <div class="tuto vid1" onclick="video1()"></div>
+        <div class="tuto vid2" onclick="video2()"></div>
+        <div class="tuto vid3" onclick="video3()"></div>
+        <div class="tuto vid4" onclick="video4()"></div>
+        <div class="tuto vid5" onclick="video5()"></div>
+        <!-- <div class="tuto6"></div>
+        <div class="tuto7"></div>
+        <div class="tuto8"></div>
+        <div class="tuto9"></div>
+        <div class="tuto10"></div> -->
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
